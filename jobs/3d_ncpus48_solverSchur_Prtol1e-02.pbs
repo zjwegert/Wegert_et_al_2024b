@@ -1,0 +1,29 @@
+#!/bin/bash -l
+#PBS -N 3d_ncpus48_solverSchur_Prtol1e-02
+#PBS -l select=48:ncpus=1:mpiprocs=1:ompthreads=1:mem=4GB:cputype=6140
+#PBS -l walltime=1:00:00
+#PBS -j oe
+
+# Load MPI module and julia (adjust to load a specific version of MPI on the HPC)
+module load intel 
+module load julia
+
+# Location of project files
+export PROJECT_DIR=<...>
+
+# Set other variables
+export P4EST_VERSION='2.8.5'
+export PETSC_VERSION='3.19.5'
+export JULIA_PETSC_LIBRARY="$HOME/bin/petsc/$PETSC_VERSION/lib/libpetsc"
+export P4EST_ROOT_DIR="$HOME/bin/p4est/$P4EST_VERSION"
+
+mpirun -n 48 julia --project=$PROJECT_DIR \
+  $PROJECT_DIR/scripts/3d_solver_benchmark.jl \
+  --px 4 \
+  --py 4 \
+  --pz 3 \
+  --n 71 \
+  --solver-method Schur \
+  --elast-solver-rtol 0.01 \
+  --cond-solver-rtol 0.01 \
+  --line-search
