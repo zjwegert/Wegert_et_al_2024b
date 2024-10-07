@@ -2,7 +2,7 @@
 
 This repository contains the algorithms and results for the following manuscript:
 
-> Zachary J. Wegert, Anthony P. Roberts, and Vivien J. Challis. Memory-distributed level set-based inverse homogenisation of three-dimensional piezoelectric materials. Under review.
+> Zachary J. Wegert, Anthony P. Roberts, and Vivien J. Challis (2024). "Memory-distributed level set-based inverse homogenisation of three-dimensional piezoelectric materials". [arXiv:2410.03148](https://arxiv.org/abs/2410.03148).
 
 If you use or modify this package, we ask that you cite the above manuscript and others listed under [GridapTopOpt](https://github.com/zjwegert/GridapTopOpt.jl).
 
