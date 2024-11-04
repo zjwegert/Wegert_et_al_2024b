@@ -1,4 +1,4 @@
-using GridapTopOpt_Piezo,GridapTopOpt,Gridap,Gridap.TensorValues,JSON3,Comonicon
+using Wegert_et_al_2024b,GridapTopOpt,Gridap,Gridap.TensorValues,JSON3,Comonicon
 # Distributed Dependencies
 using GridapDistributed, GridapPETSc, GridapSolvers, PartitionedArrays,
   SparseMatricesCSR, GridapSolvers.BlockSolvers, Gridap.MultiField
