@@ -1,4 +1,4 @@
-module GridapTopOpt_Piezo
+module Wegert_et_al_2024b
 
 using Gridap
 using GridapDistributed
