@@ -1,0 +1,47 @@
+name = "Wegert_et_al_2024b"
+uuid = "56f1811e-9a3d-40d0-b684-ee231ab4aaa1"
+authors = ["Zachary J Wegert <zach.wegert@hdr.qut.edu.au>", "Vivien J Challis", "Anothony P Roberts"]
+version = "1.0.0-DEV"
+
+[deps]
+AbstractTrees = "1520ce14-60c1-5f80-bbc7-55ef81b5835c"
+BlockArrays = "8e7c35d0-a365-5155-bbbb-fb81a777f24e"
+Comonicon = "863f3e99-da2a-4334-8734-de3dacbe5542"
+ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
+Gridap = "56d4f2e9-7ea1-5844-9cf6-b9c51ca7ce8e"
+GridapDistributed = "f9701e48-63b3-45aa-9a63-9bc6c271f355"
+GridapEmbedded = "8838a6a3-0006-4405-b874-385995508d5d"
+GridapPETSc = "bcdc36c2-0c3e-11ea-095a-c9dadae499f1"
+GridapSolvers = "6d3209ee-5e3c-4db7-a716-942eb12ed534"
+GridapTopOpt = "27dd0110-1916-4fd6-8b4b-1bc109db1170"
+JSON3 = "0f8b85d8-7281-11e9-16c2-39a750bddbf1"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+MPI = "da04e1cc-30fd-572f-bb4f-1f8673147195"
+MPIPreferences = "3da0fdf6-3ccc-4f1b-acd9-58baa6c99267"
+PartitionedArrays = "5a9dfac6-5c52-46f7-8278-5e2210713be9"
+SparseMatricesCSR = "a0a7dd2c-ebf4-11e9-1f05-cf50bc540ca1"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+
+[compat]
+AbstractTrees = "=0.4.5"
+BlockArrays = "=0.16.43"
+Comonicon = "=1.0.8"
+ForwardDiff = "=0.10.36"
+Gridap = "=0.18.2"
+GridapDistributed = "=0.4.1"
+GridapEmbedded = "=0.9.3"
+GridapPETSc = "=0.5.2"
+GridapSolvers = "=0.3.0"
+GridapTopOpt = "=0.1.1"
+JSON3 = "=1.14.0"
+MPI = "=0.20.20"
+PartitionedArrays = "=0.3.4"
+SparseMatricesCSR = "0.6.7"
+StaticArrays = "=1.9.5"
+julia = "1.6.7"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

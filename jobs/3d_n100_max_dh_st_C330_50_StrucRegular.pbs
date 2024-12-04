@@ -1,0 +1,28 @@
+#!/bin/bash -l
+#PBS -N 3d_n100_max_dh_st_C330_50_StrucRegular
+#PBS -l select=150:ncpus=1:mpiprocs=1:ompthreads=1:mem=7GB:cputype=6140
+#PBS -l walltime=48:00:00
+#PBS -j oe
+
+# Load MPI module and julia (adjust to load a specific version of MPI on the HPC)
+module load intel 
+module load julia
+
+# Location of project files
+export PROJECT_DIR=<...>
+
+# Set other variables
+export P4EST_VERSION='2.8.5'
+export PETSC_VERSION='3.19.5'
+export JULIA_PETSC_LIBRARY="$HOME/bin/petsc/$PETSC_VERSION/lib/libpetsc"
+export P4EST_ROOT_DIR="$HOME/bin/p4est/$P4EST_VERSION"
+
+mpirun -n 150 julia --project=$PROJECT_DIR \
+  $PROJECT_DIR/scripts/3d_max_dh_constrain_C33.jl \
+  --px 5 \
+  --py 5 \
+  --pz 6 \
+  --C33 0.50 \
+  --lsf-func "initial_lsf(2,0.4)" \
+  --write-dir-suffix "_Struc=Regular" \
+  --line-search

@@ -1,0 +1,914 @@
+--------------------------------------------------
+Parsed args for BlockGMRES solver benchmark:
+       (px,py,pz) => (6, 9, 8)
+                n => 150
+            order => 1
+         lsf_func => initial_lsf(2,0.4)
+        write_dir => /scratch/ek63/zw0279/GridapTopOpt_Piezo//results/solver_benchmarks/
+    solver_method => BlockGMRES
+            nreps => 10
+       petsc_opts => -ksp_converged_reason
+elast_solver_rtol => 0.0001
+ cond_solver_rtol => 0.0001
+--------------------------------------------------
+KSP Object: 432 MPI processes
+  type: cg
+  maximum iterations=200, initial guess is zero
+  tolerances:  relative=0.0001, absolute=1e-50, divergence=10000.
+  left preconditioning
+  using DEFAULT norm type for convergence test
+PC Object: 432 MPI processes
+  type: gamg
+  PC has not been set up so information may be incomplete
+    type is MULTIPLICATIVE, levels=0 cycles=unknown
+      Cycles per PCApply=0
+      Using externally compute Galerkin coarse grid matrices
+      GAMG specific options
+        Threshold for dropping small values in graph on each level =  
+        Threshold scaling factor for each level not specified = 1.
+        AGG specific options
+          Number of levels to square graph 1
+          Number smoothing steps 1
+        Complexity:    grid = 0.    operator = 0.
+  linear system matrix = precond matrix:
+  Mat Object: 432 MPI processes
+    type: mpiaij
+    rows=10124997, cols=10124997
+    total: nonzeros=820124523, allocated nonzeros=820124523
+    total number of mallocs used during MatSetValues calls=0
+      has attached near null space
+      using I-node (on process 0) routines: found 6120 nodes, limit used is 5
+KSP Object: 432 MPI processes
+  type: cg
+  maximum iterations=100, initial guess is zero
+  tolerances:  relative=0.0001, absolute=1e-50, divergence=10000.
+  left preconditioning
+  using DEFAULT norm type for convergence test
+PC Object: 432 MPI processes
+  type: gamg
+  PC has not been set up so information may be incomplete
+    type is MULTIPLICATIVE, levels=0 cycles=unknown
+      Cycles per PCApply=0
+      Using externally compute Galerkin coarse grid matrices
+      GAMG specific options
+        Threshold for dropping small values in graph on each level =  
+        Threshold scaling factor for each level not specified = 1.
+        AGG specific options
+          Number of levels to square graph 1
+          Number smoothing steps 1
+        Complexity:    grid = 0.    operator = 0.
+  linear system matrix = precond matrix:
+  Mat Object: 432 MPI processes
+    type: mpiaij
+    rows=3374999, cols=3374999
+    total: nonzeros=91124947, allocated nonzeros=91124947
+    total number of mallocs used during MatSetValues calls=0
+      not using I-node (on process 0) routines
+KSP Object: 432 MPI processes
+  type: cg
+  maximum iterations=200, initial guess is zero
+  tolerances:  relative=0.0001, absolute=1e-50, divergence=10000.
+  left preconditioning
+  using DEFAULT norm type for convergence test
+PC Object: 432 MPI processes
+  type: gamg
+  PC has not been set up so information may be incomplete
+    type is MULTIPLICATIVE, levels=0 cycles=unknown
+      Cycles per PCApply=0
+      Using externally compute Galerkin coarse grid matrices
+      GAMG specific options
+        Threshold for dropping small values in graph on each level =  
+        Threshold scaling factor for each level not specified = 1.
+        AGG specific options
+          Number of levels to square graph 1
+          Number smoothing steps 1
+        Complexity:    grid = 0.    operator = 0.
+  linear system matrix = precond matrix:
+  Mat Object: 432 MPI processes
+    type: mpiaij
+    rows=10124997, cols=10124997
+    total: nonzeros=820124523, allocated nonzeros=820124523
+    total number of mallocs used during MatSetValues calls=0
+      has attached near null space
+      using I-node (on process 0) routines: found 6120 nodes, limit used is 5
+KSP Object: 432 MPI processes
+  type: cg
+  maximum iterations=100, initial guess is zero
+  tolerances:  relative=0.0001, absolute=1e-50, divergence=10000.
+  left preconditioning
+  using DEFAULT norm type for convergence test
+PC Object: 432 MPI processes
+  type: gamg
+  PC has not been set up so information may be incomplete
+    type is MULTIPLICATIVE, levels=0 cycles=unknown
+      Cycles per PCApply=0
+      Using externally compute Galerkin coarse grid matrices
+      GAMG specific options
+        Threshold for dropping small values in graph on each level =  
+        Threshold scaling factor for each level not specified = 1.
+        AGG specific options
+          Number of levels to square graph 1
+          Number smoothing steps 1
+        Complexity:    grid = 0.    operator = 0.
+  linear system matrix = precond matrix:
+  Mat Object: 432 MPI processes
+    type: mpiaij
+    rows=3374999, cols=3374999
+    total: nonzeros=91124947, allocated nonzeros=91124947
+    total number of mallocs used during MatSetValues calls=0
+      not using I-node (on process 0) routines
+<------------- Compilation  ------------->
+--------------- Starting GMRES solver -----------------
+  > Iteration   0 - Residuals: 4.94e-02,   1.00e+00 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   1 - Residuals: 9.81e-03,   1.98e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   2 - Residuals: 8.65e-03,   1.75e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   3 - Residuals: 2.19e-03,   4.44e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 31
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   4 - Residuals: 2.17e-03,   4.39e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   5 - Residuals: 3.69e-04,   7.47e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   6 - Residuals: 3.66e-04,   7.40e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   7 - Residuals: 6.13e-05,   1.24e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   8 - Residuals: 6.06e-05,   1.23e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   9 - Residuals: 1.04e-05,   2.11e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  10 - Residuals: 1.03e-05,   2.09e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  11 - Residuals: 1.73e-06,   3.50e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  12 - Residuals: 1.71e-06,   3.47e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  13 - Residuals: 2.83e-07,   5.72e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  14 - Residuals: 2.80e-07,   5.67e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  15 - Residuals: 4.84e-08,   9.79e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  16 - Residuals: 4.78e-08,   9.68e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  17 - Residuals: 8.03e-09,   1.63e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  18 - Residuals: 7.92e-09,   1.60e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 26
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  19 - Residuals: 1.59e-09,   3.22e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  20 - Residuals: 1.53e-09,   3.10e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  21 - Residuals: 4.04e-10,   8.18e-09 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 8
+Solver GMRES finished with reason SOLVER_CONVERGED_RTOL
+Iterations:  21 - Residuals: 4.04e-10,   8.18e-09 
+--------------- Exiting GMRES solver ------------------
+<------------- Benchmarking ------------->
+      Benchmark - Iteration 1 of 10
+--------------- Starting GMRES solver -----------------
+  > Iteration   0 - Residuals: 4.94e-02,   1.00e+00 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   1 - Residuals: 9.81e-03,   1.98e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   2 - Residuals: 8.65e-03,   1.75e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   3 - Residuals: 2.19e-03,   4.44e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 31
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   4 - Residuals: 2.17e-03,   4.39e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   5 - Residuals: 3.69e-04,   7.47e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   6 - Residuals: 3.66e-04,   7.40e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   7 - Residuals: 6.13e-05,   1.24e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   8 - Residuals: 6.06e-05,   1.23e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   9 - Residuals: 1.04e-05,   2.11e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  10 - Residuals: 1.03e-05,   2.09e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  11 - Residuals: 1.73e-06,   3.50e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  12 - Residuals: 1.71e-06,   3.47e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  13 - Residuals: 2.83e-07,   5.72e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  14 - Residuals: 2.80e-07,   5.67e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  15 - Residuals: 4.84e-08,   9.79e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  16 - Residuals: 4.78e-08,   9.68e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  17 - Residuals: 8.03e-09,   1.63e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  18 - Residuals: 7.92e-09,   1.60e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 26
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  19 - Residuals: 1.59e-09,   3.22e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  20 - Residuals: 1.53e-09,   3.10e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  21 - Residuals: 4.04e-10,   8.18e-09 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 8
+Solver GMRES finished with reason SOLVER_CONVERGED_RTOL
+Iterations:  21 - Residuals: 4.04e-10,   8.18e-09 
+--------------- Exiting GMRES solver ------------------
+      Benchmark - Iteration 2 of 10
+--------------- Starting GMRES solver -----------------
+  > Iteration   0 - Residuals: 4.94e-02,   1.00e+00 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   1 - Residuals: 9.81e-03,   1.98e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   2 - Residuals: 8.65e-03,   1.75e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   3 - Residuals: 2.19e-03,   4.44e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 31
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   4 - Residuals: 2.17e-03,   4.39e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   5 - Residuals: 3.69e-04,   7.47e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   6 - Residuals: 3.66e-04,   7.40e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   7 - Residuals: 6.13e-05,   1.24e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   8 - Residuals: 6.06e-05,   1.23e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   9 - Residuals: 1.04e-05,   2.11e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  10 - Residuals: 1.03e-05,   2.09e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  11 - Residuals: 1.73e-06,   3.50e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  12 - Residuals: 1.71e-06,   3.47e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  13 - Residuals: 2.83e-07,   5.72e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  14 - Residuals: 2.80e-07,   5.67e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  15 - Residuals: 4.84e-08,   9.79e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  16 - Residuals: 4.78e-08,   9.68e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  17 - Residuals: 8.03e-09,   1.63e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  18 - Residuals: 7.92e-09,   1.60e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 26
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  19 - Residuals: 1.59e-09,   3.22e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  20 - Residuals: 1.53e-09,   3.10e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  21 - Residuals: 4.04e-10,   8.18e-09 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 8
+Solver GMRES finished with reason SOLVER_CONVERGED_RTOL
+Iterations:  21 - Residuals: 4.04e-10,   8.18e-09 
+--------------- Exiting GMRES solver ------------------
+      Benchmark - Iteration 3 of 10
+--------------- Starting GMRES solver -----------------
+  > Iteration   0 - Residuals: 4.94e-02,   1.00e+00 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   1 - Residuals: 9.81e-03,   1.98e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   2 - Residuals: 8.65e-03,   1.75e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   3 - Residuals: 2.19e-03,   4.44e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 31
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   4 - Residuals: 2.17e-03,   4.39e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   5 - Residuals: 3.69e-04,   7.47e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   6 - Residuals: 3.66e-04,   7.40e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   7 - Residuals: 6.13e-05,   1.24e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   8 - Residuals: 6.06e-05,   1.23e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   9 - Residuals: 1.04e-05,   2.11e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  10 - Residuals: 1.03e-05,   2.09e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  11 - Residuals: 1.73e-06,   3.50e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  12 - Residuals: 1.71e-06,   3.47e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  13 - Residuals: 2.83e-07,   5.72e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  14 - Residuals: 2.80e-07,   5.67e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  15 - Residuals: 4.84e-08,   9.79e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  16 - Residuals: 4.78e-08,   9.68e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  17 - Residuals: 8.03e-09,   1.63e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  18 - Residuals: 7.92e-09,   1.60e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 26
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  19 - Residuals: 1.59e-09,   3.22e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  20 - Residuals: 1.53e-09,   3.10e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  21 - Residuals: 4.04e-10,   8.18e-09 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 8
+Solver GMRES finished with reason SOLVER_CONVERGED_RTOL
+Iterations:  21 - Residuals: 4.04e-10,   8.18e-09 
+--------------- Exiting GMRES solver ------------------
+      Benchmark - Iteration 4 of 10
+--------------- Starting GMRES solver -----------------
+  > Iteration   0 - Residuals: 4.94e-02,   1.00e+00 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   1 - Residuals: 9.81e-03,   1.98e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   2 - Residuals: 8.65e-03,   1.75e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   3 - Residuals: 2.19e-03,   4.44e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 31
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   4 - Residuals: 2.17e-03,   4.39e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   5 - Residuals: 3.69e-04,   7.47e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   6 - Residuals: 3.66e-04,   7.40e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   7 - Residuals: 6.13e-05,   1.24e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   8 - Residuals: 6.06e-05,   1.23e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   9 - Residuals: 1.04e-05,   2.11e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  10 - Residuals: 1.03e-05,   2.09e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  11 - Residuals: 1.73e-06,   3.50e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  12 - Residuals: 1.71e-06,   3.47e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  13 - Residuals: 2.83e-07,   5.72e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  14 - Residuals: 2.80e-07,   5.67e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  15 - Residuals: 4.84e-08,   9.79e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  16 - Residuals: 4.78e-08,   9.68e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  17 - Residuals: 8.03e-09,   1.63e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  18 - Residuals: 7.92e-09,   1.60e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 26
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  19 - Residuals: 1.59e-09,   3.22e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  20 - Residuals: 1.53e-09,   3.10e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  21 - Residuals: 4.04e-10,   8.18e-09 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 8
+Solver GMRES finished with reason SOLVER_CONVERGED_RTOL
+Iterations:  21 - Residuals: 4.04e-10,   8.18e-09 
+--------------- Exiting GMRES solver ------------------
+      Benchmark - Iteration 5 of 10
+--------------- Starting GMRES solver -----------------
+  > Iteration   0 - Residuals: 4.94e-02,   1.00e+00 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   1 - Residuals: 9.81e-03,   1.98e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   2 - Residuals: 8.65e-03,   1.75e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   3 - Residuals: 2.19e-03,   4.44e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 31
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   4 - Residuals: 2.17e-03,   4.39e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   5 - Residuals: 3.69e-04,   7.47e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   6 - Residuals: 3.66e-04,   7.40e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   7 - Residuals: 6.13e-05,   1.24e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   8 - Residuals: 6.06e-05,   1.23e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   9 - Residuals: 1.04e-05,   2.11e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  10 - Residuals: 1.03e-05,   2.09e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  11 - Residuals: 1.73e-06,   3.50e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  12 - Residuals: 1.71e-06,   3.47e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  13 - Residuals: 2.83e-07,   5.72e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  14 - Residuals: 2.80e-07,   5.67e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  15 - Residuals: 4.84e-08,   9.79e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  16 - Residuals: 4.78e-08,   9.68e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  17 - Residuals: 8.03e-09,   1.63e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  18 - Residuals: 7.92e-09,   1.60e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 26
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  19 - Residuals: 1.59e-09,   3.22e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  20 - Residuals: 1.53e-09,   3.10e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  21 - Residuals: 4.04e-10,   8.18e-09 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 8
+Solver GMRES finished with reason SOLVER_CONVERGED_RTOL
+Iterations:  21 - Residuals: 4.04e-10,   8.18e-09 
+--------------- Exiting GMRES solver ------------------
+      Benchmark - Iteration 6 of 10
+--------------- Starting GMRES solver -----------------
+  > Iteration   0 - Residuals: 4.94e-02,   1.00e+00 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   1 - Residuals: 9.81e-03,   1.98e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   2 - Residuals: 8.65e-03,   1.75e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   3 - Residuals: 2.19e-03,   4.44e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 31
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   4 - Residuals: 2.17e-03,   4.39e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   5 - Residuals: 3.69e-04,   7.47e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   6 - Residuals: 3.66e-04,   7.40e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   7 - Residuals: 6.13e-05,   1.24e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   8 - Residuals: 6.06e-05,   1.23e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   9 - Residuals: 1.04e-05,   2.11e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  10 - Residuals: 1.03e-05,   2.09e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  11 - Residuals: 1.73e-06,   3.50e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  12 - Residuals: 1.71e-06,   3.47e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  13 - Residuals: 2.83e-07,   5.72e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  14 - Residuals: 2.80e-07,   5.67e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  15 - Residuals: 4.84e-08,   9.79e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  16 - Residuals: 4.78e-08,   9.68e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  17 - Residuals: 8.03e-09,   1.63e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  18 - Residuals: 7.92e-09,   1.60e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 26
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  19 - Residuals: 1.59e-09,   3.22e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  20 - Residuals: 1.53e-09,   3.10e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  21 - Residuals: 4.04e-10,   8.18e-09 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 8
+Solver GMRES finished with reason SOLVER_CONVERGED_RTOL
+Iterations:  21 - Residuals: 4.04e-10,   8.18e-09 
+--------------- Exiting GMRES solver ------------------
+      Benchmark - Iteration 7 of 10
+--------------- Starting GMRES solver -----------------
+  > Iteration   0 - Residuals: 4.94e-02,   1.00e+00 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   1 - Residuals: 9.81e-03,   1.98e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   2 - Residuals: 8.65e-03,   1.75e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   3 - Residuals: 2.19e-03,   4.44e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 31
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   4 - Residuals: 2.17e-03,   4.39e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   5 - Residuals: 3.69e-04,   7.47e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   6 - Residuals: 3.66e-04,   7.40e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   7 - Residuals: 6.13e-05,   1.24e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   8 - Residuals: 6.06e-05,   1.23e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   9 - Residuals: 1.04e-05,   2.11e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  10 - Residuals: 1.03e-05,   2.09e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  11 - Residuals: 1.73e-06,   3.50e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  12 - Residuals: 1.71e-06,   3.47e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  13 - Residuals: 2.83e-07,   5.72e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  14 - Residuals: 2.80e-07,   5.67e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  15 - Residuals: 4.84e-08,   9.79e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  16 - Residuals: 4.78e-08,   9.68e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  17 - Residuals: 8.03e-09,   1.63e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  18 - Residuals: 7.92e-09,   1.60e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 26
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  19 - Residuals: 1.59e-09,   3.22e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  20 - Residuals: 1.53e-09,   3.10e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  21 - Residuals: 4.04e-10,   8.18e-09 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 8
+Solver GMRES finished with reason SOLVER_CONVERGED_RTOL
+Iterations:  21 - Residuals: 4.04e-10,   8.18e-09 
+--------------- Exiting GMRES solver ------------------
+      Benchmark - Iteration 8 of 10
+--------------- Starting GMRES solver -----------------
+  > Iteration   0 - Residuals: 4.94e-02,   1.00e+00 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   1 - Residuals: 9.81e-03,   1.98e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   2 - Residuals: 8.65e-03,   1.75e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   3 - Residuals: 2.19e-03,   4.44e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 31
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   4 - Residuals: 2.17e-03,   4.39e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   5 - Residuals: 3.69e-04,   7.47e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   6 - Residuals: 3.66e-04,   7.40e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   7 - Residuals: 6.13e-05,   1.24e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   8 - Residuals: 6.06e-05,   1.23e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   9 - Residuals: 1.04e-05,   2.11e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  10 - Residuals: 1.03e-05,   2.09e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  11 - Residuals: 1.73e-06,   3.50e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  12 - Residuals: 1.71e-06,   3.47e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  13 - Residuals: 2.83e-07,   5.72e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  14 - Residuals: 2.80e-07,   5.67e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  15 - Residuals: 4.84e-08,   9.79e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  16 - Residuals: 4.78e-08,   9.68e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  17 - Residuals: 8.03e-09,   1.63e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  18 - Residuals: 7.92e-09,   1.60e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 26
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  19 - Residuals: 1.59e-09,   3.22e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  20 - Residuals: 1.53e-09,   3.10e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  21 - Residuals: 4.04e-10,   8.18e-09 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 8
+Solver GMRES finished with reason SOLVER_CONVERGED_RTOL
+Iterations:  21 - Residuals: 4.04e-10,   8.18e-09 
+--------------- Exiting GMRES solver ------------------
+      Benchmark - Iteration 9 of 10
+--------------- Starting GMRES solver -----------------
+  > Iteration   0 - Residuals: 4.94e-02,   1.00e+00 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   1 - Residuals: 9.81e-03,   1.98e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   2 - Residuals: 8.65e-03,   1.75e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   3 - Residuals: 2.19e-03,   4.44e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 31
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   4 - Residuals: 2.17e-03,   4.39e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   5 - Residuals: 3.69e-04,   7.47e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   6 - Residuals: 3.66e-04,   7.40e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   7 - Residuals: 6.13e-05,   1.24e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   8 - Residuals: 6.06e-05,   1.23e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   9 - Residuals: 1.04e-05,   2.11e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  10 - Residuals: 1.03e-05,   2.09e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  11 - Residuals: 1.73e-06,   3.50e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  12 - Residuals: 1.71e-06,   3.47e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  13 - Residuals: 2.83e-07,   5.72e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  14 - Residuals: 2.80e-07,   5.67e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  15 - Residuals: 4.84e-08,   9.79e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  16 - Residuals: 4.78e-08,   9.68e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  17 - Residuals: 8.03e-09,   1.63e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  18 - Residuals: 7.92e-09,   1.60e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 26
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  19 - Residuals: 1.59e-09,   3.22e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  20 - Residuals: 1.53e-09,   3.10e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  21 - Residuals: 4.04e-10,   8.18e-09 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 8
+Solver GMRES finished with reason SOLVER_CONVERGED_RTOL
+Iterations:  21 - Residuals: 4.04e-10,   8.18e-09 
+--------------- Exiting GMRES solver ------------------
+      Benchmark - Iteration 10 of 10
+--------------- Starting GMRES solver -----------------
+  > Iteration   0 - Residuals: 4.94e-02,   1.00e+00 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   1 - Residuals: 9.81e-03,   1.98e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   2 - Residuals: 8.65e-03,   1.75e-01 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration   3 - Residuals: 2.19e-03,   4.44e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 31
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   4 - Residuals: 2.17e-03,   4.39e-02 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   5 - Residuals: 3.69e-04,   7.47e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   6 - Residuals: 3.66e-04,   7.40e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   7 - Residuals: 6.13e-05,   1.24e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   8 - Residuals: 6.06e-05,   1.23e-03 
+Linear solve converged due to CONVERGED_RTOL iterations 30
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration   9 - Residuals: 1.04e-05,   2.11e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  10 - Residuals: 1.03e-05,   2.09e-04 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  11 - Residuals: 1.73e-06,   3.50e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  12 - Residuals: 1.71e-06,   3.47e-05 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  13 - Residuals: 2.83e-07,   5.72e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  14 - Residuals: 2.80e-07,   5.67e-06 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  15 - Residuals: 4.84e-08,   9.79e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  16 - Residuals: 4.78e-08,   9.68e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  17 - Residuals: 8.03e-09,   1.63e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  18 - Residuals: 7.92e-09,   1.60e-07 
+Linear solve converged due to CONVERGED_RTOL iterations 26
+Linear solve converged due to CONVERGED_RTOL iterations 8
+  > Iteration  19 - Residuals: 1.59e-09,   3.22e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 29
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  20 - Residuals: 1.53e-09,   3.10e-08 
+Linear solve converged due to CONVERGED_RTOL iterations 27
+Linear solve converged due to CONVERGED_RTOL iterations 9
+  > Iteration  21 - Residuals: 4.04e-10,   8.18e-09 
+Linear solve converged due to CONVERGED_RTOL iterations 28
+Linear solve converged due to CONVERGED_RTOL iterations 8
+Solver GMRES finished with reason SOLVER_CONVERGED_RTOL
+Iterations:  21 - Residuals: 4.04e-10,   8.18e-09 
+--------------- Exiting GMRES solver ------------------
+
+======================================================================================
+                  Resource Usage on 2024-07-02 11:07:19:
+   Job Id:             119522451.gadi-pbs
+   Project:            ek63
+   Exit Status:        0
+   Service Units:      266.64
+   NCPUs Requested:    432                    NCPUs Used: 432             
+                                           CPU Time Used: 120:29:05       
+   Memory Requested:   1.69TB                Memory Used: 997.78GB        
+   Walltime requested: 01:00:00            Walltime Used: 00:18:31        
+   JobFS requested:    900.0MB                JobFS used: 0B              
+======================================================================================
