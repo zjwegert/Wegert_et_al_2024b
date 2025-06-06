@@ -134,7 +134,6 @@ Run the above post-processing solve.
 - `--pz <arg>`: partition along z-axis.
 - `--n <arg>` : mesh partition along each axis.
 - `--path <arg>`: path to the directory where the results are stored.
-- `--struc_name <arg>`: name of the structure to be processed.
 
 # Flags
 
@@ -144,11 +143,11 @@ Run the above post-processing solve.
     py::Int,
     pz::Int,
     n::Int=100,
-    path::String,
-    struc_name::String)
+    path::String)
   mesh_partition = (px,py,pz)
   with_mpi() do distribute
     ranks = distribute(LinearIndices((prod(mesh_partition),)))
+    struc_name = last(readdir(path))
     if i_am_main(ranks)
       println("--------------------------------------------------")
       println("Parsed args for post-processing")
