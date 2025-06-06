@@ -3,6 +3,8 @@ using Wegert_et_al_2024b,GridapTopOpt,Gridap,Gridap.TensorValues,GridapEmbedded,
 using GridapDistributed, GridapPETSc, GridapSolvers, PartitionedArrays,
   SparseMatricesCSR, GridapSolvers.BlockSolvers, Gridap.MultiField
 
+using GridapDistributed: allocate_in_range, allocate_in_domain
+
 function main(ranks,params)
   mesh_partition,n,path,struc_name = params
 
