@@ -133,6 +133,8 @@ Run the above post-processing solve.
 - `--py <arg>`: partition along y-axis.
 - `--pz <arg>`: partition along z-axis.
 - `--n <arg>` : mesh partition along each axis.
+- `--path <arg>`: path to the directory where the results are stored.
+- `--struc_name <arg>`: name of the structure to be processed.
 
 # Flags
 
