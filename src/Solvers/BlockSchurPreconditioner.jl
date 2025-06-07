@@ -253,14 +253,3 @@ end
 function Gridap.Algebra.solve!(X::AbstractBlockVector,ns::BlockSchurPreconditionerNS,B::AbstractBlockVector)
   solve!(X,ns.P_ns,B)
 end
-
-## Bug fix in GridapSolvers (tmp)
-function Gridap.Algebra.numerical_setup!(ns::GridapSolvers.BlockSolvers.BlockTriangularSolverNS,mat::AbstractBlockMatrix)
-  solver       = ns.solver
-  mat_blocks   = blocks(mat)
-  block_caches = map(GridapSolvers.BlockSolvers.update_block_cache!,ns.block_caches,solver.blocks,mat_blocks)
-  map(diag(solver.blocks),ns.block_ns,diag(block_caches)) do bi, nsi, ci
-    numerical_setup!(nsi,ci)
-  end
-  return ns
-end
