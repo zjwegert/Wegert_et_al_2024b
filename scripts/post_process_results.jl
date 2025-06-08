@@ -126,7 +126,7 @@ function run(ranks,params)
   κᴴᵢⱼ = map(rs->sum(κᴴ(rs[1],rs[2],uφ)), CartesianIndices((1:3, 1:3)))*mat.κ1/mat.A₂₂
   Sᴴ = inv(Cᴴᵣₛ)
   dᴴ = eᴴᵢₛ*Sᴴ;
-  dᴴₕ = (dᴴ[3,1] + dᴴ[3,2] + dᴴ[3,3])*(mat.e1/mat.A₁₂)
+  dᴴₕ = (dᴴ[3,1] + dᴴ[3,2] + dᴴ[3,3])
   Bᴴₕ_Voigt = 1/9*(Cᴴᵣₛ[1,1]+Cᴴᵣₛ[2,2]+Cᴴᵣₛ[3,3]+2*(Cᴴᵣₛ[1,2]+Cᴴᵣₛ[1,3]+Cᴴᵣₛ[2,3]))
   Bᴴₕ_Reuss = (1/sum(Sᴴ[i,j] for i = 1:3, j = 1:3))
   Vol = sum(∫(1/vol_D)dΩ_phys);
